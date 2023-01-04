@@ -189,6 +189,9 @@ function fetchInputs(text, sortSelection, numberOfPhotos){
 // Function that displays the images
 function displayImages(imageData){
     console.log(imageData)
+    if (imageData.photos.total == 0) {
+        alert('Sorry, we could not find anything with that name. Please try again.')
+    }
     const imgContainer = document.querySelector('#img-container');
     imgContainer.innerHTML = '';
 
