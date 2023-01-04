@@ -116,8 +116,8 @@ let calcScrollValue = () => {
     scrollBtn.style.background = `conic-gradient(#5C258D ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+window.addEventListener('scroll', calcScrollValue);
+window.addEventListener('load', calcScrollValue);
 
 // loading animation
 const loader = document.querySelector('#loading');
